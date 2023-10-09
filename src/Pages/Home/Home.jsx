@@ -50,14 +50,9 @@ const Home = () => {
                 </div>
 
                 <div className=" md:w-1/2">
-                    <div className="grid grid-cols-3 md:grid-cols-4 gap-8 ">
-                        <img className="w-20 " src="1.png" alt="" />
-                        <img className="w-20" src="2.png" alt="" />
-                        <img className="w-20" src="3.png" alt="" />
-                        <img className="w-20" src="4.png" alt="" />
-                        <img className="w-20" src="5.png" alt="" />
-                        <img className="w-20" src="6.png" alt="" />
-                        <img className="w-20" src="5.png" alt="" />
+                    <div className="">
+                        <img className="w-full " src="Events-cuate.png" alt="" />
+                        
                     </div>
                 </div>
 

@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { userAuth } from "../Layout/AuthProvider";
 import swal from "sweetalert";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Registraition = () => {
 
@@ -80,7 +80,7 @@ const Registraition = () => {
                                 <button type="submit" className="w-full text-white bg-blue-900 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create an account</button>
 
                                 <p className="text-sm font-light text-blue-900 dark:text-gray-400">
-                                    Already have an account? <a href="#" className="font-bold text-yellow-900 hover:underline ">Login here</a>
+                                    Already have an account? <Link className="text-orange-800 font-bold" to='/login'>Login</Link>
 
                                 </p>
                             </form>

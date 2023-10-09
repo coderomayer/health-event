@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { userAuth } from '../Layout/AuthProvider';
 
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
+    const {logOut, user} = useContext(userAuth)
 
     const toggleNav = () => {
         setOpenNav(!openNav);
@@ -36,14 +38,7 @@ const Header = () => {
                     Services
                 </NavLink>
 
-                <NavLink
-                    to="/contact"  // Replace with the correct path for the "Contact" link
-                    className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "text-blue-900" : ""
-                    }
-                >
-                    Contact
-                </NavLink>
+                
                 <NavLink
                     to="/registration"  // Replace with the correct path for the "Contact" link
                     className={({ isActive, isPending }) =>
@@ -52,15 +47,24 @@ const Header = () => {
                 >
                     Registration
                 </NavLink>
+
+              
             </>
         );
     };
+
+    const handleLogout = () => {
+        logOut()
+        .then()
+        .catch()
+    }
 
 
     return (
         <header className="bg-blue-gray-100 border-b-2 border-gray-200 font-DM ">
             <div className="container mx-auto py-4 px-4 md:flex md:items-center md:justify-between">
                 <div className="flex items-center justify-between">
+
                     <a href="#" className="text-2xl font-semibold text-gray-800">
                         <img className='w-20' src="WellnessFusion.png" alt="" />
                     </a>
@@ -104,6 +108,12 @@ const Header = () => {
                 {/* Desktop navigation */}
                 <nav className="hidden md:flex space-x-4">
                     {navList()}
+
+                    {
+                        user ? <button className='bg-black text-white px-4 py-2 rounded' onClick={handleLogout}>Log out</button> :  <NavLink to='/login'><button className="bg-black text-white px-4 py-2 rounded text-xs ">Login</button></NavLink>
+                    }
+
+
                 </nav>
 
 
