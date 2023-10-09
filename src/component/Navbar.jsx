@@ -35,6 +35,7 @@ const Header = () => {
                 >
                     Services
                 </NavLink>
+
                 <NavLink
                     to="/contact"  // Replace with the correct path for the "Contact" link
                     className={({ isActive, isPending }) =>
@@ -42,6 +43,14 @@ const Header = () => {
                     }
                 >
                     Contact
+                </NavLink>
+                <NavLink
+                    to="/registration"  // Replace with the correct path for the "Contact" link
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "text-blue-900" : ""
+                    }
+                >
+                    Registration
                 </NavLink>
             </>
         );

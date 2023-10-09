@@ -4,6 +4,7 @@ import RootElement from "./RootElement";
 import Home from "../Pages/Home/Home";
 import ServiceDetails from "../Pages/serviceDetails";
 import ServicePage from "../Pages/servicePage";
+import Registraition from "../Pages/Registraition";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,14 @@ const router = createBrowserRouter([
           path: '/services',
           element:<ServicePage></ServicePage>,
           loader: () => fetch('services.json')
+
+        },
+
+        {
+
+          path: '/registration',
+          element: <Registraition></Registraition>
+
 
         },
 
