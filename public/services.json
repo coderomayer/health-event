@@ -1,0 +1,52 @@
+ [
+      {
+        "id": "service1",
+        "image": "image-url-1.jpg",
+        "title": "Yoga and Meditation Workshop",
+        "description": "Experience inner peace and balance with our guided yoga and meditation sessions. Suitable for all levels.",
+        "price": "$49.99",
+        "buttonText": "See Details"
+      },
+      {
+        "id": "service2",
+        "image": "image-url-2.jpg",
+        "title": "Nutrition Consultation",
+        "description": "Get personalized nutrition advice from our experts to optimize your health and well-being.",
+        "price": "$29.99",
+        "buttonText": "See Details"
+      },
+      {
+        "id": "service3",
+        "image": "image-url-3.jpg",
+        "title": "Wellness Workshops",
+        "description": "Engage in informative workshops on topics like stress management, mindfulness, and healthy living.",
+        "price": "$19.99",
+        "buttonText": "See Details"
+      },
+      {
+        "id": "service4",
+        "image": "image-url-4.jpg",
+        "title": "Fitness Classes",
+        "description": "Join high-energy fitness classes led by certified instructors to boost your physical well-being.",
+        "price": "$39.99",
+        "buttonText": "See Details"
+      },
+      {
+        "id": "service5",
+        "image": "image-url-5.jpg",
+        "title": "Holistic Health Consultation",
+        "description": "Discover holistic approaches to healing and wellness through one-on-one consultations.",
+        "price": "$59.99",
+        "buttonText": "See Details"
+      },
+      {
+        "id": "service6",
+        "image": "image-url-6.jpg",
+        "title": "Wellness Expo Access",
+        "description": "Gain entry to our Wellness Expo featuring the latest health and wellness products and services.",
+        "price": "Free Admission",
+        "buttonText": "Learn More"
+      }
+    ]
+  
+  
