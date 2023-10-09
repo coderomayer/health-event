@@ -7,11 +7,9 @@ const RootElement = () => {
 
     return (
 
-        <div>
+        <div className="max-w-[1480px] mx-auto">
             <Header></Header>
-            
             <Outlet></Outlet>
-
             <Footer></Footer>
 
         </div>
